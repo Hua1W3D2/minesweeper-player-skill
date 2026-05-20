@@ -1,0 +1,8 @@
+interface:
+  display_name: "Minesweeper Player"
+  short_description: "Play browser Minesweeper with visible-first logic."
+  default_prompt: "Use $minesweeper-player to play minesweeper.cn with visible-information logic first, then answer fallback only after deduction stalls."
+
+policy:
+  allow_implicit_invocation: true
+
