@@ -28,7 +28,8 @@ Copy the skill folder into your local skills directory.
 Windows PowerShell:
 
 ```powershell
-Copy-Item -Recurse -Force .\minesweeper-player "$env:USERPROFILE\.agents\skills\minesweeper-player"
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
+Copy-Item -Recurse -Force .\minesweeper-player "$env:USERPROFILE\.codex\skills"
 ```
 
 macOS/Linux:
